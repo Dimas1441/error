@@ -507,6 +507,7 @@ wget -O cek-tr "https://raw.githubusercontent.com/Dimas1441/error/main/cek-tr.sh
 wget -O renew-ws "https://raw.githubusercontent.com/Dimas1441/error/main/renew-ws.sh"
 wget -O renew-vless "https://raw.githubusercontent.com/Dimas1441/error/main/renew-vless.sh"
 wget -O renew-tr "https://raw.githubusercontent.com/Dimas1441/error/main/renew-tr.sh"
+wget -O certv2ray "https://raw.githubusercontent.com/Dimas1441/error/main/cert.sh"
 chmod +x panel-v2ray
 chmod +x panel-vless
 chmod +x panel-trojan
@@ -523,7 +524,7 @@ chmod +x cek-tr
 chmod +x renew-ws
 chmod +x renew-vless
 chmod +x renew-tr
-certv2ray
+chmod +x certv2ray
 cd
 rm -f ins-vt.sh
 mv /root/domain /etc/v2ray
