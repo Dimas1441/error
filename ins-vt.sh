@@ -526,5 +526,6 @@ chmod +x renew-vless
 chmod +x renew-tr
 chmod +x certv2ray
 cd
+certv2ray
 rm -f ins-vt.sh
 mv /root/domain /etc/v2ray
