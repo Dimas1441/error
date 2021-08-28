@@ -491,9 +491,9 @@ systemctl enable trojan
 systemctl restart v2ray
 systemctl enable v2ray
 cd /usr/bin
-wget -O panel-v2ray "https://raw.githubusercontent.com/Dimas1441/error/main/panel-v2ray"
-wget -O panel-vless "https://raw.githubusercontent.com/Dimas1441/error/main/panel-vless"
-wget -O panel-trojan "https://raw.githubusercontent.com/Dimas1441/error/main/panel-trojan"
+wget -O /usr/bin/panel-v2ray https://raw.githubusercontent.com/Dimas1441/error/main/panel-v2ray && dos2unix /usr/bin/panel-v2ray && chmod +x /usr/bin/panel-v2ray
+wget -O /usr/bin/panel-vless https://raw.githubusercontent.com/Dimas1441/error/main/panel-vless && dos2unix /usr/bin/panel-vless && chmod +x /usr/bin/panel-vless
+wget -O /usr/bin/panel-trojan https://raw.githubusercontent.com/Dimas1441/error/main/panel-trojan && dos2unix /usr/bin/panel-trojan && chmod +x /usr/bin/panel-trojan
 wget -O trial-ws "https://raw.githubusercontent.com/Dimas1441/error/main/trial-ws"
 wget -O add-ws "https://raw.githubusercontent.com/Dimas1441/error/main/add-ws.sh"
 wget -O add-vless "https://raw.githubusercontent.com/Dimas1441/error/main/add-vless.sh"
@@ -508,9 +508,6 @@ wget -O renew-ws "https://raw.githubusercontent.com/Dimas1441/error/main/renew-w
 wget -O renew-vless "https://raw.githubusercontent.com/Dimas1441/error/main/renew-vless.sh"
 wget -O renew-tr "https://raw.githubusercontent.com/Dimas1441/error/main/renew-tr.sh"
 wget -O certv2ray "https://raw.githubusercontent.com/Dimas1441/error/main/cert.sh"
-chmod +x panel-v2ray
-chmod +x panel-vless
-chmod +x panel-trojan
 chmod +x trial-ws
 chmod +x add-ws
 chmod +x add-vless
@@ -525,7 +522,10 @@ chmod +x renew-ws
 chmod +x renew-vless
 chmod +x renew-tr
 chmod +x certv2ray
+wget -O /usr/bin/xp https://raw.githubusercontent.com/Dimas1441/error/main/xp.sh && chmod +x /usr/bin/xp
+wget -O /usr/bin/xp-ws https://raw.githubusercontent.com/Dimas1441/error/main/xp-ws.sh && chmod +x /usr/bin/xp-ws
 cd
 certv2ray
+echo "0 0 * * * root xp" >> /etc/crontab
 rm -f ins-vt.sh
 mv /root/domain /etc/v2ray
