@@ -164,4 +164,6 @@ wget -O /usr/bin/add-trgo https://raw.githubusercontent.com/Dimas1441/ipvps/main
 wget -O /usr/bin/del-trgo https://raw.githubusercontent.com/Dimas1441/ipvps/main/del-trgo.sh && dos2unix /usr/bin/del-trgo && chmod +x /usr/bin/del-trgo
 wget -O /usr/bin/renew-trgo https://raw.githubusercontent.com/Dimas1441/ipvps/main/renew-trgo.sh && dos2unix /usr/bin/renew-trgo && chmod +x /usr/bin/renew-trgo
 wget -O /usr/bin/cek-trgo https://raw.githubusercontent.com/Dimas1441/ipvps/main/cek-trgo.sh && dos2unix /usr/bin/cek-trgo && chmod +x /usr/bin/cek-trgo
+wget -O /usr/bin/xp-trgo https://raw.githubusercontent.com/Dimas1441/error/main/xp-trgo.sh && chmod +x /usr/bin/xp-trgo
+echo "0 0 * * * root xp-trgo" >> /etc/crontab
 echo "DONE INSTALL TROJAN-GO" 
